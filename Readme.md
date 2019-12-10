@@ -8,23 +8,24 @@ unique-values-generator is a node package for generating unique numbers which st
 ### `In your project directory, run npm install unique-values-generator OR yarn add unique-values-generator`
 
 You can then require it in your file and use it<br/>
-<b>const uniquevalues = require('unique-values-generator');</b><br/>
-<b>const value = uniquevalues.generate(1000,{increment:1,prefix:'Patient'});</b><br/>
-console.log(value);
+<b>const uniquevalues &nbsp; = &nbsp; require('unique-values-generator');</b><br/>
+<b>const value  &nbsp;=&nbsp;   uniquevalues.generate(1000,{increment:1,prefix:'Patient'});</b><br/>
+
+console.log(value); <!--- Patient1000, Patient1001, Patient1002, ... -->
 
 ### `Three way usage. You can choose any which suits your needs.` 
-<b>Usage 1</b>
-const uniquevalues = require('unique-values-generator');<br/>
- uniquevalues.generate(startValue); # uniquevalues.generate(100) <br/>
+<b>Usage 1</b><br/>
+const uniquevalues &nbsp; = &nbsp; require('unique-values-generator');<br/>
+ uniquevalues.generate(startValue); <!--- let num = uniquevalues.generate(100) // // returns series of unique number on every call --> <br/>
  
 
 
 
-<b>Usage 2</b>
-const uniquevalues = require('unique-values-generator');<br/>
-uniquevalues.generate(startValue, increment); # uniquevalues.generate(100,1) <br/>
+<b>Usage 2</b><br/>
+const uniquevalues &nbsp; = &nbsp; require('unique-values-generator');<br/>
+uniquevalues.generate(startValue, increment);  <!--- let num = uniquevalues.generate(100) // returns series of unique number on every call--><br/>
 
 
-<b>Usage 3</b>
-const uniquevalues = require('unique-values-generator');<br/>
-uniquevalues.generate(startValue, {increment, prefix}); # uniquevalues.generate(1000,{increment:1,prefix:'Author'}); <br/>
+<b>Usage 3</b><br/>
+const uniquevalues &nbsp; = &nbsp; require('unique-values-generator');<br/>
+uniquevalues.generate(startValue, {increment, prefix}); <!--- let num = uniquevalues.generate({increment: 1000, prefix: 'Patient'}) // Patient1000, Patient1001, Patient1002, ...--> <br/>
