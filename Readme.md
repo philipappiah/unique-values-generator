@@ -25,7 +25,8 @@ const uniquevalues &nbsp; = &nbsp; <b>require('unique-values-generator');</b><br
 <b>Usage 2</b><br/>
 const uniquevalues &nbsp; = &nbsp; <b>require('unique-values-generator');</b><br/>
  uniquevalues.generate(startValue, increment);   <br/>
-#Example; &nbsp;  <b>let num &nbsp; = &nbsp; uniquevalues.generate(100, 1)</b> &nbsp; // &nbsp; returns series of unique number on every call.. 100, 101, 102... <br/>
+ 
+#Example; &nbsp;  let num &nbsp; = &nbsp; uniquevalues.generate(100, 1) &nbsp; // &nbsp; returns series of unique number on every call.. 100, 101, 102... <br/>
 
 <b>Usage 3</b><br/>
 const uniquevalues &nbsp; = &nbsp;  <b>require('unique-values-generator');</b><br/>
