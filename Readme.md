@@ -16,19 +16,29 @@ You can then require it in your file and use it<br/>
 ### `Three way usage. You can choose any which suits your needs.` 
 <b>Usage 1</b><br/>
 const uniquevalues &nbsp; = &nbsp; <b>require('unique-values-generator');</b><br/>
- uniquevalues.generate(startValue);   <br/>
- #Example; &nbsp;  <b>let num &nbsp; = &nbsp; uniquevalues.generate(100)</b> &nbsp; // &nbsp; returns series of unique number on every call <br/>
+#Example; &nbsp;  <b>let num &nbsp; = &nbsp; uniquevalues.generate(100)</b> &nbsp; // &nbsp; returns series of unique number on every call <br/>
+
+ uniquevalues.generate(startValue); //startValue can be any number   <br/>
+ 
+
+ ### `Clear data from storage` 
+ const uniquevalues &nbsp; = &nbsp; <b>require('unique-values-generator');</b><br/>
+ uniquevalues.clear();<br/>
  
 
 
 
 <b>Usage 2</b><br/>
 const uniquevalues &nbsp; = &nbsp; <b>require('unique-values-generator');</b><br/>
- uniquevalues.generate(startValue, increment);   <br/>
- 
 #Example; &nbsp;  let num &nbsp; = &nbsp; uniquevalues.generate(100, 1) &nbsp; // &nbsp; returns series of unique number on every call.. 100, 101, 102... <br/>
 
-<b>Usage 3</b><br/>
+ uniquevalues.generate(startValue, increment);   <br/>
+ 
+
+
+<b>Usage 3 (with optional parameters)</b><br/>
 const uniquevalues &nbsp; = &nbsp;  <b>require('unique-values-generator');</b><br/>
-uniquevalues.generate(startValue, {increment, prefix});<br/>
  #Example &nbsp; <b>let num &nbsp;= &nbsp;uniquevalues.generate({increment: 1000, prefix: 'Patient'})</b>  &nbsp;// &nbsp; Patient1000, Patient1001, Patient1002, ... <br/>
+
+uniquevalues.generate(startValue, {increment, prefix});<br/>
+

@@ -46,3 +46,13 @@ exports.generate = (sValue, opt) => {
 
 
 
+exports.clear = () => {
+  fs.writeFile(
+    `${__dirname}/store.json`,
+    `{"value":0,"startValue":0, "increment":1, "options":""}`,
+    function(err) {
+      if (err) throw err;
+    }
+  );
+
+}
