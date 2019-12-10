@@ -38,7 +38,7 @@ const uniquevalues &nbsp; = &nbsp; <b>require('unique-values-generator');</b><br
 
 <b>Usage 3 (with optional parameters)</b><br/>
 const uniquevalues &nbsp; = &nbsp;  <b>require('unique-values-generator');</b><br/>
- #Example &nbsp; <b>let num &nbsp;= &nbsp;uniquevalues.generate({increment: 1000, prefix: 'Patient'})</b>  &nbsp;// &nbsp; Patient1000, Patient1001, Patient1002, ... <br/>
+ #Example &nbsp; <b>let num &nbsp;= &nbsp;uniquevalues.generate(1000,{increment:1,prefix:'Patient'});</b>  &nbsp;// &nbsp; Patient1000, Patient1001, Patient1002, ... <br/>
 
 uniquevalues.generate(startValue, {increment, prefix});<br/>
 
