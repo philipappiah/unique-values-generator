@@ -6,7 +6,7 @@ let pathExists = `${dir}/store.json`;
 exports.generate = (sValue, opt) => {
 
   let startValue = sValue || 0;
-  let increment = typeof(opt) === 'object' ? opt.increment : 1;
+  let increment = typeof(opt) === 'object' ? opt.increment : opt ? opt:1;
   let options = typeof(opt) === 'object'  ? opt.prefix : "";
   let newVal = startValue;
   try {
