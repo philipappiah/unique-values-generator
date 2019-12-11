@@ -1,6 +1,7 @@
 const fs = require("fs");
+const dir = require('os').homedir();
 
-let pathExists = `${__dirname}/store.json`;
+let pathExists = `${dir}/store.json`;
 
 exports.generate = (sValue, opt) => {
 
@@ -22,7 +23,7 @@ exports.generate = (sValue, opt) => {
         newVal = prevData.value + increment;
       }
       fs.writeFile(
-        `${__dirname}/store.json`,
+        `${dir}/store.json`,
         `{"value":${newVal},"startValue":${startValue}, "increment":${increment}, "options":"${options}"}`,
         function(err) {
           if (err) throw err;
@@ -30,7 +31,7 @@ exports.generate = (sValue, opt) => {
       );
     } else {
       fs.writeFile(
-        `${__dirname}/store.json`,
+        `${dir}/store.json`,
         `{"value":${newVal},"startValue":${startValue}, "increment":${increment}, "options":"${options}"}`,
         function(err) {
           if (err) throw err;
@@ -48,7 +49,7 @@ exports.generate = (sValue, opt) => {
 
 exports.clear = () => {
   fs.writeFile(
-    `${__dirname}/store.json`,
+    `${dir}/store.json`,
     `{"value":0,"startValue":0, "increment":1, "options":""}`,
     function(err) {
       if (err) throw err;
